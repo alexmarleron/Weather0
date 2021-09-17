@@ -20,51 +20,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="dcb-1S-aVZ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="NIg-tm-hj5">
-                                <rect key="frame" x="106" y="89" width="203" height="287.5"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.sun.rain" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g4H-ez-eC1" userLabel="Conditional Image View">
-                                        <rect key="frame" x="51.5" y="-3" width="102.5" height="105.5"/>
-                                        <color key="tintColor" name="WeatherColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="KKf-c4-PpW"/>
-                                            <constraint firstAttribute="height" constant="100" id="Nlf-7S-w0Q"/>
-                                        </constraints>
-                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="light"/>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGD-Gz-bgh" userLabel="Temperature Stack View">
-                                        <rect key="frame" x="0.0" y="116" width="203" height="119.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGp-mk-VDA" userLabel="Temp">
-                                                <rect key="frame" x="0.0" y="0.0" width="100.5" height="119.5"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
-                                                <color key="textColor" name="WeatherColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6V-lY-uSW">
-                                                <rect key="frame" x="100.5" y="0.0" width="35.5" height="119.5"/>
-                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="100"/>
-                                                <color key="textColor" name="WeatherColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcn-49-WFJ">
-                                                <rect key="frame" x="136" y="0.0" width="67" height="119.5"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
-                                                <color key="textColor" name="WeatherColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St - Petersburg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCI-Kh-gxp" userLabel="City Label">
-                                        <rect key="frame" x="4.5" y="251.5" width="194.5" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <color key="textColor" name="WeatherColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uEE-em-Gji">
-                                <rect key="frame" x="62" y="806" width="290" height="40"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uEE-em-Gji">
+                                <rect key="frame" x="62" y="812" width="290" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twW-7I-2FR" userLabel="Location Button">
                                         <rect key="frame" x="0.0" y="0.5" width="40" height="39"/>
@@ -92,14 +49,66 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NIg-tm-hj5">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.sun.rain" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g4H-ez-eC1" userLabel="Conditional Image View">
+                                        <rect key="frame" x="137" y="-3" width="102.5" height="105.5"/>
+                                        <color key="tintColor" name="WeatherColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="KKf-c4-PpW"/>
+                                            <constraint firstAttribute="height" constant="100" id="Nlf-7S-w0Q"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="light"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGD-Gz-bgh" userLabel="Temperature Stack View">
+                                        <rect key="frame" x="85.5" y="110" width="203" height="119.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGp-mk-VDA" userLabel="Temp">
+                                                <rect key="frame" x="0.0" y="0.0" width="100.5" height="119.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
+                                                <color key="textColor" name="WeatherColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6V-lY-uSW">
+                                                <rect key="frame" x="100.5" y="0.0" width="35.5" height="119.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="100"/>
+                                                <color key="textColor" name="WeatherColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcn-49-WFJ">
+                                                <rect key="frame" x="136" y="0.0" width="67" height="119.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
+                                                <color key="textColor" name="WeatherColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St - Petersburg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCI-Kh-gxp" userLabel="City Label">
+                                        <rect key="frame" x="90" y="239.5" width="194.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" name="WeatherColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXJ-N1-iQM">
+                                        <rect key="frame" x="67" y="285.5" width="240" height="532.5"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="NIg-tm-hj5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="0Ks-d7-DFW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NIg-tm-hj5" secondAttribute="bottom" id="C8H-N5-7nO"/>
                             <constraint firstItem="dcb-1S-aVZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Q1j-wW-XFR"/>
                             <constraint firstAttribute="bottom" secondItem="dcb-1S-aVZ" secondAttribute="bottom" id="Wj3-1L-UFn"/>
                             <constraint firstItem="dcb-1S-aVZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d4I-h8-upQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uEE-em-Gji" secondAttribute="bottom" constant="10" id="eVQ-qE-dl3"/>
                             <constraint firstItem="dcb-1S-aVZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fST-jv-hBq"/>
+                            <constraint firstItem="uEE-em-Gji" firstAttribute="centerX" secondItem="NIg-tm-hj5" secondAttribute="centerX" id="kt6-w1-if2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NIg-tm-hj5" secondAttribute="trailing" constant="20" id="o2W-eX-Ef6"/>
+                            <constraint firstItem="NIg-tm-hj5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vQ9-5Y-aUv"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -114,7 +123,7 @@
         <image name="location.circle" catalog="system" width="128" height="121"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="WeatherColor">
-            <color white="0.14910343289375305" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color white="0.14900000393390656" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
