@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,46 +14,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="dcb-1S-aVZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uEE-em-Gji">
-                                <rect key="frame" x="62" y="812" width="290" height="40"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twW-7I-2FR" userLabel="Location Button">
-                                        <rect key="frame" x="0.0" y="0.5" width="40" height="39"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="C5v-hj-60K"/>
-                                            <constraint firstAttribute="height" constant="40" id="cnC-3H-glc"/>
-                                        </constraints>
-                                        <color key="tintColor" name="WeatherColor"/>
-                                        <state key="normal" backgroundImage="location.circle" catalog="system"/>
-                                    </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Поиск" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="4c0-Hg-2w1" userLabel="Search Text Field">
-                                        <rect key="frame" x="45" y="0.0" width="200" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemFillColor"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" textContentType="location"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdO-rk-YlU" userLabel="Search Button">
-                                        <rect key="frame" x="250" y="1" width="40" height="38"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="Spi-Dh-GnV"/>
-                                            <constraint firstAttribute="height" constant="40" id="XJS-tE-LCd"/>
-                                        </constraints>
-                                        <color key="tintColor" name="WeatherColor"/>
-                                        <state key="normal" backgroundImage="magnifyingglass" catalog="system"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NIg-tm-hj5">
-                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <rect key="frame" x="20" y="0.0" width="280" height="480"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.sun.rain" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g4H-ez-eC1" userLabel="Conditional Image View">
-                                        <rect key="frame" x="137" y="-3" width="102.5" height="105.5"/>
+                                        <rect key="frame" x="90" y="-3" width="102.5" height="105.5"/>
                                         <color key="tintColor" name="WeatherColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="KKf-c4-PpW"/>
@@ -62,7 +33,7 @@
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="light"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGD-Gz-bgh" userLabel="Temperature Stack View">
-                                        <rect key="frame" x="85.5" y="110" width="203" height="119.5"/>
+                                        <rect key="frame" x="38.5" y="110" width="203" height="119.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGp-mk-VDA" userLabel="Temp">
                                                 <rect key="frame" x="0.0" y="0.0" width="100.5" height="119.5"/>
@@ -85,14 +56,53 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St - Petersburg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCI-Kh-gxp" userLabel="City Label">
-                                        <rect key="frame" x="90" y="239.5" width="194.5" height="36"/>
+                                        <rect key="frame" x="43" y="239.5" width="194.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" name="WeatherColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXJ-N1-iQM">
-                                        <rect key="frame" x="67" y="285.5" width="240" height="532.5"/>
+                                        <rect key="frame" x="20" y="285.5" width="240" height="194.5"/>
                                     </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uEE-em-Gji">
+                                <rect key="frame" x="15" y="430" width="290" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twW-7I-2FR" userLabel="Location Button">
+                                        <rect key="frame" x="0.0" y="0.5" width="40" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="C5v-hj-60K"/>
+                                            <constraint firstAttribute="height" constant="40" id="cnC-3H-glc"/>
+                                        </constraints>
+                                        <color key="tintColor" name="WeatherColor"/>
+                                        <state key="normal" backgroundImage="location.circle" catalog="system"/>
+                                        <connections>
+                                            <action selector="locationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nO9-P1-WeL"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Поиск" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="4c0-Hg-2w1" userLabel="Search Text Field">
+                                        <rect key="frame" x="45" y="0.0" width="200" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Pez-tc-YIL"/>
+                                            <constraint firstAttribute="height" constant="40" id="rzm-h8-Q3k"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" textContentType="location"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdO-rk-YlU" userLabel="Search Button">
+                                        <rect key="frame" x="250" y="1" width="40" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Spi-Dh-GnV"/>
+                                            <constraint firstAttribute="height" constant="40" id="XJS-tE-LCd"/>
+                                        </constraints>
+                                        <color key="tintColor" name="WeatherColor"/>
+                                        <state key="normal" backgroundImage="magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <action selector="searchButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GRp-Va-Ncx"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -100,17 +110,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="NIg-tm-hj5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="0Ks-d7-DFW"/>
+                            <constraint firstItem="dcb-1S-aVZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="0oJ-ME-EQ2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NIg-tm-hj5" secondAttribute="bottom" id="C8H-N5-7nO"/>
-                            <constraint firstItem="dcb-1S-aVZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Q1j-wW-XFR"/>
-                            <constraint firstAttribute="bottom" secondItem="dcb-1S-aVZ" secondAttribute="bottom" id="Wj3-1L-UFn"/>
-                            <constraint firstItem="dcb-1S-aVZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d4I-h8-upQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uEE-em-Gji" secondAttribute="bottom" constant="10" id="eVQ-qE-dl3"/>
-                            <constraint firstItem="dcb-1S-aVZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fST-jv-hBq"/>
+                            <constraint firstItem="dcb-1S-aVZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fIG-8T-s2g"/>
+                            <constraint firstItem="dcb-1S-aVZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fpY-Jd-RZM"/>
                             <constraint firstItem="uEE-em-Gji" firstAttribute="centerX" secondItem="NIg-tm-hj5" secondAttribute="centerX" id="kt6-w1-if2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NIg-tm-hj5" secondAttribute="trailing" constant="20" id="o2W-eX-Ef6"/>
+                            <constraint firstAttribute="bottom" secondItem="dcb-1S-aVZ" secondAttribute="bottom" id="u9b-ZE-vUU"/>
                             <constraint firstItem="NIg-tm-hj5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vQ9-5Y-aUv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="MCI-Kh-gxp" id="lwy-m3-5fg"/>
+                        <outlet property="conditionImageView" destination="g4H-ez-eC1" id="KLG-DC-khH"/>
+                        <outlet property="searchTextField" destination="4c0-Hg-2w1" id="g6Y-Xy-rqs"/>
+                        <outlet property="temperatureLabel" destination="JGp-mk-VDA" id="OBd-3e-cvw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
