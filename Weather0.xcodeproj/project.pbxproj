@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2624E7FB270B0C6400688DF9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624E7FA270B0C6400688DF9 /* Constants.swift */; };
 		26C1102426F46CC10099A15B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C1102326F46CC10099A15B /* AppDelegate.swift */; };
 		26C1102626F46CC10099A15B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C1102526F46CC10099A15B /* SceneDelegate.swift */; };
 		26C1102826F46CC10099A15B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C1102726F46CC10099A15B /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2624E7FA270B0C6400688DF9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		26C1102026F46CC10099A15B /* Weather0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C1102326F46CC10099A15B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26C1102526F46CC10099A15B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				26C1102326F46CC10099A15B /* AppDelegate.swift */,
 				26C1102526F46CC10099A15B /* SceneDelegate.swift */,
 				26C1102726F46CC10099A15B /* ViewController.swift */,
+				2624E7FA270B0C6400688DF9 /* Constants.swift */,
 				26C1102926F46CC10099A15B /* Main.storyboard */,
 				26C1102C26F46CC20099A15B /* Assets.xcassets */,
 				26C1102E26F46CC20099A15B /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				26C1102826F46CC10099A15B /* ViewController.swift in Sources */,
 				26C1102426F46CC10099A15B /* AppDelegate.swift in Sources */,
 				26C1102626F46CC10099A15B /* SceneDelegate.swift in Sources */,
+				2624E7FB270B0C6400688DF9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
