@@ -7,14 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManagerDelegate {
     @IBOutlet var conditionImageView: UIImageView!
     @IBOutlet var temperatureLabel: UILabel!
     @IBOutlet var cityLabel: UILabel!
     @IBOutlet var searchTextField: UITextField!
     
+    var weatherManager = WeatherManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        weatherManager.delegate = self
         searchTextField.delegate = self
     }
     @IBAction func locationButtonPressed(_ sender: UIButton) {
@@ -22,7 +26,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func searchButtonPressed(_ sender: UIButton) {
         //done with editing and dismiss keyboard
-        print(searchTextField.text!)
+//        print(searchTextField.text!)
         searchTextField.endEditing(true)
     }
     //return key in the keyboard was pressed
@@ -34,6 +38,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     //reset searchText
     func textFieldDidEndEditing(_ textField: UITextField) {
+        if let city = searchTextField.text {
+            weatherManager.fetchWeather(cityName: city)
+        }
         searchTextField.text = ""
     }
     //placeholder for type something
@@ -46,5 +53,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    func didUpdateWeather(weather: WeatherModel){
+        print(weather.temperature)
+    }
 }
 
