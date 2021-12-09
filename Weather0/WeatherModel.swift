@@ -16,7 +16,7 @@ struct WeatherModel {
     var temperatureString: String {
         return String(format: "%.1f", temperature)
     }
-    
+
     var conditionName: String {
         //    func getConditionName(weatherCode: Int) -> String {
         //        switch weatherCode {
